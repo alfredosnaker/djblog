@@ -7,4 +7,5 @@ from . import views
 urlpatterns = [
     path('', views.post_list, name='post_list'),
     path('post/<int:pk>/', views.post_detail, name='post_detail'),  
+    path('conver_to_pdf/', views.render_pdf_view, name='render_pdf_view')
 ]

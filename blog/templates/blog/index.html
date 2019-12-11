@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GFMX Grupo Financiero MX</title>
+    <style>
+
+        thead{
+            background-color: #2A285E;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            border: 2px solid #AF8D54 ;
+            text-align: left;
+            padding: 8px;
+            width: 50%;
+            font-size: 15px;
+        }
+        html{
+            padding: 0px 50px;
+            text-align: center;
+        }
+        th {
+            color : white;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .second_title{
+            padding : 1px;
+            background-color:#2A285E;
+            color: #ffffff;
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .notice {
+            color: #5D6975;
+            font-size: 1.2em;
+        }
+
+        a{
+            color: #AF8D54;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <img src="../../static/images/gfmx-logo.png" width="415" height="141">
+    </div>
+    <div class="second_title">
+        <h2>Comprobante de pago  </h2>
+    </div>
+        <div class="container">
+                <table>
+                        <tr>
+                            <td>Operación</td>
+                            <td>{{operation}}</td>
+                        </tr>
+                        <tr>
+                            <td>Beneficiario</td>
+                            <td>{{name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Concepto</td>
+                            <td>{{concept}}</td>
+                        </tr>
+                        <tr>
+                            <td>Importe</td>
+                            <td>{{amount}}</td>
+                        </tr>
+                        <tr>
+                            <td>Institución emisora del pago</td>
+                            <td>{{issuing_bank}}</td>
+                        </tr>
+                        <tr>
+                            <td>Institución receptora del pago</td>
+                            <td>{{receiving_bank}}</td>
+                        </tr>
+                        <tr>
+                            <td>Fecha y Hora</td>
+                            <td>{{datetime}}</td>
+                        </tr>
+                        <tr>
+                            <td>Referencia</td>
+                            <td>{{reference}}</td>
+                        </tr>
+                        <tr>
+                            <td>Clave de Rastreo</td>
+                            <td>{{tracking_key}}</td>
+                        </tr>
+                </table>
+            </div>
+                <div class="notice">Puedes consultar el estatus de tu operación en </div>
+                <div class="notice">
+                    <a href="www.banxico.org.mx">www.banxico.org.mx</a>
+                </div>
+                    <div class="notice">
+                    O consulta detalles de tu envío en Banca por Internet
+                    </div>
+                    <div class="notice">
+                    <a href="www.grupofinancieromexico.com">www.grupofinancieromexico.com </a>
+                    </div>
+           
+</body>
+</html>
