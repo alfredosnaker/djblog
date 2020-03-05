@@ -14,6 +14,25 @@ from django.template.loader import get_template
 from xhtml2pdf import pisa
 
 # Create your views here.
+
+def notification(request):
+    template = 'blog/notification.html'
+
+    investor = 'ALFREDO REYES CORTES'
+    address = 'NOGALES 108, COL. PRIMAVERA'
+    city = 'OAXACA DE JUAREZ, OAXACA'
+    zip_code = '68140'
+    investment_amount = '$20,000.00'
+    amount_twelve = 'NOTHING'
+    amount_eighteen = 'NOTHING'
+    amount_twenty = 'NOTHING' 
+    data_dict = {'investor':investor,'address':address,'city':city,'zip_code':zip_code,
+    'investment_amount': investment_amount, 'amount_twelve': amount_twelve,
+    'amount_eighteen': amount_eighteen, 'amount_twenty': amount_twenty
+    }
+    
+    return render(request, template, data_dict)
+
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
@@ -32,7 +51,7 @@ def link_callback(uri, rel):
     sUrl = settings.STATIC_URL      # Typically /static/
     sRoot = settings.STATIC_ROOT    # Typically /home/userX/project_static/
     mUrl = settings.MEDIA_URL       # Typically /static/media/
-    mRoot = settings.MEDIA_ROOT     # Typically /home/userX/project_static/media/
+    mRoot = settings.MEDIA_ROOT     # Typically /home15/userX/project_static/media/
 
     # convert URIs to absolute system paths
     if uri.startswith(mUrl):
