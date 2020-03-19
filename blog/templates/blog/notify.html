@@ -1,0 +1,90 @@
+{% load static %}
+<div style="padding:10px 0;background-color:#f8f2e5;margin:0; " bgcolor="#f4ead6">
+    <table style="background-color:#fff;margin:20px auto 28px;border-radius: 10px;max-width:650px;padding:0;border:solid 1px #f8f2e5" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
+        <tbody>
+            <tr>
+                <td>
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                        <tbody>
+                            <tr>
+                                <td style="font-size:1px" height="30">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center; padding-bottom: 20px;">
+                                    <a href="https://goldenclickads.com/" target="_blank">
+                                        <img  alt="Golden Clicks Ads" src="https://business.goldenclickads.com/static/images/logo-text2.png" class="CToWUd" width="330" height="41" border="0">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="padding:10 20px;text-align:center;margin:0 auto;max-width:590px" width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="padding:24px 0">
+                                    <span style="font-family:Arial;font-size:16px;color:#333333; line-height:25px;"><strong style="white-space:nowrap">[{{affair}}]</strong></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    {% if person %}
+                    <table style="padding:10 20px;text-align:left;margin:0 auto;max-width:590px" width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="padding-bottom:24px">
+                                    <p style="font-family:Arial;font-size:16px;color:#333333;line-height:25px">Hola, <strong style="white-space:nowrap">{{person}}</strong></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    {% endif%}
+                    <table style="padding:10 20px;text-align:left;margin:0 auto;max-width:590px" width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="padding-bottom:24px">
+                                    <p style="font-family:Arial;font-size:16px;color:#333333;line-height:25px">{{content}}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    {% if url%}
+                    <table style="padding:10 20px;margin:0 auto;max-width:590px;" width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr style='text-align: left;'>
+                                <td style="padding-bottom:5px">
+                                    <p style="font-family:Arial;font-size:16px;color:#333333;line-height:25px; ">{{razon_to_redirect}}</p>
+                                </td>
+                            </tr>
+                            <tr style ='text-align: center;'>
+                                <td style='padding-bottom:24px'>
+                                    <a style="font-family:Arial;font-size:16px;line-height:25px;margin-top: 15px;" href="{{url}}">{{url}}</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    {% endif %}
+                    <table style="padding:10 20px;text-align:center;margin:0 auto;max-width:590px" width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="padding-bottom:24px">
+                                    <p style="font-family:Arial;font-size:16px;color:#333333;line-height:25px">Atte. el equipo de Golden Click Ads</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="text-align:center;margin-bottom:28px" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+            <tr>
+                <td style="padding:0"><span style="color:#999999;font-size:12px;font-family:Arial">Si tienes dudas, consulta nuestra <a href="{{url_help}}" style="text-decoration:none;font-family:Arial;color:#0637b3" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.mercadopago.com.mx/ayuda&amp;source=gmail&amp;ust=1583440865579000&amp;usg=AFQjCNGX4iZ8zLa4doqDojOtlSesdqh2Qw">ayuda</a>.</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
